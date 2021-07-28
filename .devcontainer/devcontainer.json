@@ -1,0 +1,32 @@
+{
+    "name": "PHP",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "sqltools.connections": [
+            {
+                "name": "Container database",
+                "driver": "MySQL",
+                "previewLimit": 50,
+                "server": "localhost",
+                "port": 3307,
+                "database": "kerran",
+                "username": "root",
+                "password": "password"
+            }
+        ],
+    },
+    "extensions": [
+        "felixfbecker.php-debug",
+        "felixfbecker.php-intellisense",
+        "amiralizadeh9480.laravel-extra-intellisense",
+        "onecentlin.laravel5-snippets"
+    ],
+    "forwardPorts": [
+        3306,
+        8000,
+        8081
+    ]
+}
